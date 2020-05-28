@@ -38,6 +38,6 @@ class PaymentProcessorTest {
     @Test
     public void issueRefund_NormalPurchaseWorks() throws Exception {
         payment.issueRefund(seller, buyer, 50, 1.30);
-        assertEquals(365.0, buyer.getBalance());
+        assertEquals(365, buyer.getBalance());
     }
 }
